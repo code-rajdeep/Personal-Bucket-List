@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+#bucketList {
+    list-style: none;
+    padding: 0;
+}
+
+#bucketList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.bucket-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#bucketList li span {
+    font-size: 18px;
+}
+
+/* Hover effect */
+#bucketList li:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    main {
+        padding: 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #bucketList li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .bucket-image {
+        margin-bottom: 10px;
+        width: 60px;
+        height: 60px;
+    }
+}
